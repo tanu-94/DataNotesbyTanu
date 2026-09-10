@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills — Tanuja Hiremath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="nav-monogram">TH</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="skills.html" class="nav-link active">Skills</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="analystworkflow.html" class="nav-link">Workflow</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-primary btn-nav">Contact</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Skills</div>
+    <h1>Technical skills</h1>
+    <p>My data analysis stack, and the tools I use inside it — each with a dedicated page going deeper into how and where I use it.</p>
+  </div>
+</section>
+
+<main>
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">Data analysis stack</h2>
+      <div class="skill-hub-grid">
+        <a href="mysql.html" class="skill-hub-card" style="--accent-grad: var(--bg-grad-blue)">
+          <h3>MySQL</h3>
+          <p>Multi-table joins, subqueries, CTEs, and window functions for business questions.</p>
+          <span class="case-link">Explore MySQL →</span>
+        </a>
+        <a href="powerbi.html" class="skill-hub-card" style="--accent-grad: var(--bg-grad-violet)">
+          <h3>Power BI</h3>
+          <p>Star-schema data modeling, DAX measures, and self-serve dashboards.</p>
+          <span class="case-link">Explore Power BI →</span>
+        </a>
+        <a href="python.html" class="skill-hub-card" style="--accent-grad: var(--bg-grad-lavender)">
+          <h3>Python</h3>
+          <p>Pandas, NumPy, and exploratory analysis to turn raw data into evidence.</p>
+          <span class="case-link">Explore Python →</span>
+        </a>
+        <a href="excel.html" class="skill-hub-card" style="--accent-grad: var(--bg-grad-coral)">
+          <h3>Excel</h3>
+          <p>Pivot tables, lookups, and validation for fast, dependable reporting.</p>
+          <span class="case-link">Explore Excel →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-elevated">
+    <div class="section-inner">
+      <h2 class="section-heading">Tools used</h2>
+      <p class="subcopy">The specific tools inside each part of the stack, used across my case studies.</p>
+      <div class="tool-tags">
+        <span class="tool-tag">MySQL</span>
+        <span class="tool-tag">Power Query</span>
+        <span class="tool-tag">DAX</span>
+        <span class="tool-tag">Pandas</span>
+        <span class="tool-tag">NumPy</span>
+        <span class="tool-tag">Jupyter Notebook</span>
+        <span class="tool-tag">GitHub</span>
+        <span class="tool-tag">Microsoft Excel</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">See it in practice</h2>
+      <p class="subcopy">Read through the full analytical process on the <a href="analystworkflow.html">workflow page</a>, or jump straight to a <a href="index.html#projects">case study</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Tanuja Hiremath. Built with HTML, CSS &amp; JavaScript — hosted on GitHub Pages.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
