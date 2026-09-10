@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python for Analytics — Tanuja Hiremath</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="nav-monogram">TH</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#hero" class="nav-link">Home</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="analystworkflow.html" class="nav-link">Workflow</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-primary btn-nav">Contact</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#skills">Skills</a> / Python</div>
+    <h1>Python for analytics</h1>
+    <p>Where SQL leaves off, Python takes over — deeper cleaning, exploratory analysis, and testing whether a pattern is actually real before it goes in a report.</p>
+  </div>
+</section>
+
+<main>
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">How I use it</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><h3>Pandas</h3><p>Reshaping, merging, and aggregating datasets across multiple related tables.</p></div>
+        <div class="feature-card"><h3>NumPy</h3><p>Numeric operations underneath the aggregations and comparisons Pandas builds on.</p></div>
+        <div class="feature-card"><h3>Data cleaning</h3><p>Handling missing values, inconsistent types, and duplicate records before analysis.</p></div>
+        <div class="feature-card"><h3>EDA</h3><p>Exploratory analysis — distributions, correlations, and outliers — before drawing conclusions.</p></div>
+        <div class="feature-card"><h3>Visualization</h3><p>Quick charts to sanity-check a finding before it's built into a polished BI report.</p></div>
+        <div class="feature-card"><h3>Business insights</h3><p>Translating a statistical pattern into a plain-language finding a stakeholder can act on.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-elevated">
+    <div class="section-inner">
+      <h2 class="section-heading">Case studies</h2>
+      <div class="skill-hub-grid">
+        <a href="https://github.com/tanu-94/Healthcare-Staff-Productivity-Shift-Analysis" class="skill-hub-card" target="_blank" rel="noopener" style="--accent-grad: var(--bg-grad-blue)">
+          <h3>Healthcare Staffing</h3>
+          <p>Root-cause analysis of shift coverage, overtime, and absenteeism.</p>
+          <span class="case-link">View GitHub repo →</span>
+        </a>
+        <a href="https://github.com/tanu-94/Restaurant_Sales_Analysis" class="skill-hub-card" target="_blank" rel="noopener" style="--accent-grad: var(--bg-grad-lavender)">
+          <h3>Restaurant Sales</h3>
+          <p>Order volume by hour, category contribution, and average order value.</p>
+          <span class="case-link">View GitHub repo →</span>
+        </a>
+        <a href="https://github.com/tanu-94/Zepto-Product-Analytics-Dashboard" class="skill-hub-card" target="_blank" rel="noopener" style="--accent-grad: var(--bg-grad-violet)">
+          <h3>Zepto Analytics</h3>
+          <p>SKU-level category mix, discount depth, and stockout patterns.</p>
+          <span class="case-link">View GitHub repo →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">Cleaning in practice</h2>
+      <div class="chart-block">
+        <h3>Missing values — before vs. after cleaning</h3>
+        <div class="chart-canvas-wrap"><canvas id="missingValuesChart"></canvas></div>
+      </div>
+      <p class="subcopy">From the hospital staffing dataset — every field was brought to 0% missing before any business question was answered.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Tanuja Hiremath. Built with HTML, CSS &amp; JavaScript — hosted on GitHub Pages.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
