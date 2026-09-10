@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanuja Hiremath — Data Analyst</title>
+  <meta name="description" content="Data Analyst portfolio — SQL, Python, Power BI, and Excel, with a UI/UX-informed approach to reporting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="nav-monogram">TH</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#hero" class="nav-link" data-section="hero">Home</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#workflow" class="nav-link" data-section="workflow">Workflow</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-nav">Contact</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="status-badge"><span class="pulse-dot"></span>Available for Data Analyst roles</div>
+        <h1 class="hero-heading">Turning raw data into<br><span class="grad-text">actionable intelligence.</span></h1>
+        <p class="hero-sub" style="font-weight:600; color:var(--text-primary); letter-spacing:0.02em;">SQL &middot; Python &middot; Power BI &middot; Excel</p>
+        <p class="hero-sub">I transform complex datasets into clear business insights and decision-ready dashboards.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="assets/Tanuja_Hiremath_Resume.pdf" class="btn btn-secondary" download>Download resume</a>
+        </div>
+      </div>
+      <div class="hero-frame">
+        <div class="hero-portrait">
+          <img src="Image/Portfolio_pic.png" alt="Portrait of Tanuja Hiremath" loading="eager" width="360" height="420">
+        </div>
+        <div class="floating-badge">
+          <span class="floating-badge-title">Workforce &amp; BI</span>
+          <span class="floating-badge-sub">Specialized in end-to-end analytics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-copy">
+        <h2 class="section-heading">From UI/UX design to data analytics</h2>
+        <p>I started out designing interfaces — reading how people move through a screen, what draws their eye, where they get stuck. That instinct for clarity followed me into data: cleaning it, analyzing it, and building it into dashboards that make sense the first time someone opens them.</p>
+      </div>
+      <div class="about-meta">
+        <div class="meta-row"><span class="meta-label">Degree</span><span class="meta-value">BCA Graduate</span></div>
+        <div class="meta-row"><span class="meta-label">Location</span><span class="meta-value">Bengaluru</span></div>
+        <div class="meta-row"><span class="meta-label">Tools</span><span class="meta-value">MySQL &middot; Python &middot; Power BI &middot; Excel &middot; DAX</span></div>
+        <div class="meta-row"><span class="meta-label">Focus</span><span class="meta-value">Data Cleaning &middot; Data Analysis &middot; Dashboard Development &middot; Business Insights</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS OVERVIEW -->
+  <section class="section section-elevated" id="skills">
+    <div class="section-inner">
+      <h2 class="section-heading">Skills overview</h2>
+      <div class="skill-hub-grid">
+        <a href="mysql.html" class="skill-hub-card" style="--accent-grad: var(--bg-grad-blue)">
+          <h3>MySQL</h3>
+          <p>Joins &middot; CTEs &middot; Window functions</p>
+          <span class="case-link">Learn more →</span>
+        </a>
+        <a href="python.html" class="skill-hub-card" style="--accent-grad: var(--bg-grad-lavender)">
+          <h3>Python</h3>
+          <p>Pandas &middot; NumPy &middot; EDA</p>
+          <span class="case-link">Learn more →</span>
+        </a>
+        <a href="powerbi.html" class="skill-hub-card" style="--accent-grad: var(--bg-grad-violet)">
+          <h3>Power BI</h3>
+          <p>Data modeling &middot; DAX &middot; Dashboards</p>
+          <span class="case-link">Learn more →</span>
+        </a>
+        <a href="excel.html" class="skill-hub-card" style="--accent-grad: var(--bg-grad-coral)">
+          <h3>Excel</h3>
+          <p>Pivot tables &middot; Lookups &middot; Reporting</p>
+          <span class="case-link">Learn more →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECT (Start of Projects section) -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <h2 class="section-heading">Featured project</h2>
+      <article class="case-featured">
+        <div class="case-featured-copy">
+          <span class="case-tag">Featured</span>
+          <h3>Healthcare Staff Productivity &amp; Shift Analysis</h3>
+          <p>Analyzed workforce gaps, overtime costs, absenteeism trends, and department staffing shortages.</p>
+          <div class="tech-badges">
+            <span class="badge">Python</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">Power BI</span>
+            <span class="badge">DAX</span>
+          </div>
+          <a href="https://github.com/tanu-94/Healthcare-Staff-Productivity-Shift-Analysis" class="case-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+        <div class="case-featured-chart">
+          <canvas id="healthcareChart"></canvas>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- OTHER PROJECTS -->
+  <section class="section section-elevated" id="other-projects">
+    <div class="section-inner">
+      <h2 class="section-heading">Other projects</h2>
+      <div class="case-grid">
+        <article class="case-card">
+          <span class="case-tag">Retail</span>
+          <h3>Superstore Analysis</h3>
+          <p>Profit leakage analysis &middot; Discount optimization</p>
+          <div class="case-card-chart"><canvas id="superstoreChart"></canvas></div>
+          <a href="https://github.com/tanu-94/superstore-discount-profit-analysis" class="case-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="case-card">
+          <span class="case-tag">Quick-commerce</span>
+          <h3>Zepto Dashboard</h3>
+          <p>16,000+ SKU analysis &middot; Category insights</p>
+          <div class="case-card-chart"><canvas id="zeptoChart"></canvas></div>
+          <a href="https://github.com/tanu-94/Zepto-Product-Analytics-Dashboard" class="case-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="case-card">
+          <span class="case-tag">Food &amp; beverage</span>
+          <h3>Restaurant Sales Analysis</h3>
+          <p>Peak hour analysis &middot; Order trends &middot; Revenue patterns</p>
+          <div class="case-card-chart"><canvas id="restaurantChart"></canvas></div>
+          <a href="https://github.com/tanu-94/Restaurant_Sales_Analysis" class="case-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY HIRE ME -->
+  <section class="section" id="why-me">
+    <div class="section-inner">
+      <h2 class="section-heading">What I bring</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><h3>✓ Strong SQL foundations</h3></div>
+        <div class="feature-card"><h3>✓ Power BI dashboard development</h3></div>
+        <div class="feature-card"><h3>✓ Python-based data analysis</h3></div>
+        <div class="feature-card"><h3>✓ UI/UX background for report usability</h3></div>
+        <div class="feature-card"><h3>✓ Business-focused storytelling</h3></div>
+        <div class="feature-card"><h3>✓ Ability to convert raw data into actionable insights</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKFLOW PREVIEW -->
+  <section class="section section-elevated" id="workflow">
+    <div class="section-inner">
+      <h2 class="section-heading">How I solve business problems</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><h3>01 Problem Framing</h3></div>
+        <div class="feature-card"><h3>02 Data Collection</h3></div>
+        <div class="feature-card"><h3>03 Data Cleaning</h3></div>
+        <div class="feature-card"><h3>04 Analysis</h3></div>
+        <div class="feature-card"><h3>05 Dashboard Development</h3></div>
+        <div class="feature-card"><h3>06 Actionable Recommendations</h3></div>
+      </div>
+      <a href="analystworkflow.html" class="btn btn-secondary">View full workflow</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-grid">
+      <div class="contact-copy">
+        <h2 class="section-heading">Let's connect</h2>
+        <ul class="contact-list">
+          <li><a href="mailto:tanu.hiremath94@gmail.com">tanu.hiremath94@gmail.com</a></li>
+          <li><a href="sms:+918951691294"></a></li>
+          <li><a href="https://linkedin.com/in/tanuja-h-350906222" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/tanu-94" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+        <div class="hero-actions" style="margin-top:20px;">
+          <a href="mailto:tanu.hiremath94@gmail.com" class="btn btn-primary">Email me</a>
+          <a href="sms:+918951691294" class="btn btn-secondary">Text me</a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm" data-sheet-endpoint="https://script.google.com/macros/s/AKfycbw-jrMrJburQyqtCLUXhjRCTOMJo49Ad1K5fKtJSMuGVUzh3aM3amomDu0l3L3nWQ-_Dg/exec">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Tanuja Hiremath &middot; Built with HTML, CSS, JavaScript &amp; Chart.js &middot; Hosted on GitHub Pages</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
