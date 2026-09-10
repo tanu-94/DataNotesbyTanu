@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power BI &amp; DAX — Tanuja Hiremath</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="nav-monogram">TH</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#hero" class="nav-link">Home</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="index.html#workflow" class="nav-link">Workflow</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-primary btn-nav">Contact</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+   <div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#skills">Skills</a> / Power BI</div>
+    <h1>Power BI &amp; DAX</h1>
+    <p>Where analysis becomes something a client can open and understand on their own, without walking them through it line by line.</p>
+  </div>
+</section>
+
+<main>
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">What I build</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><h3>Data modeling</h3><p>Structuring fact and dimension tables into a clean, queryable model.</p></div>
+        <div class="feature-card"><h3>Star schema</h3><p>Designing schemas that keep DAX measures fast and reports easy to extend.</p></div>
+        <div class="feature-card"><h3>Measures &amp; DAX</h3><p>Calculated measures, time intelligence, and KPI logic layered on the model.</p></div>
+        <div class="feature-card"><h3>Interactive dashboards</h3><p>Filters and drill-throughs that let stakeholders ask their own follow-up questions.</p></div>
+        <div class="feature-card"><h3>Business reporting</h3><p>Report pages structured around what a role actually needs to decide, not just what's available.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-elevated">
+    <div class="section-inner">
+      <h2 class="section-heading">Showcase</h2>
+      <div class="skill-hub-grid">
+        <a href="https://github.com/tanu-94/Healthcare-Staff-Productivity-Shift-Analysis" class="skill-hub-card" style="--accent-grad: var(--bg-grad-blue)">
+          <h3>Healthcare Dashboard</h3>
+          <p>Executive overview, overtime pressure, absenteeism, and cost pages.</p>
+          <span class="case-link">View dashboard →</span>
+        </a>
+        <a href="https://github.com/tanu-94/superstore-discount-profit-analysis" class="skill-hub-card" style="--accent-grad: var(--bg-grad-lavender)">
+          <h3>Superstore Dashboard</h3>
+          <p>Discount tiers, regional profit drain, and margin trend over time.</p>
+          <span class="case-link">View dashboard →</span>
+        </a>
+        <a href="https://github.com/tanu-94/Zepto-Product-Analytics-Dashboard" class="skill-hub-card" style="--accent-grad: var(--bg-grad-violet)">
+          <h3>Zepto Dashboard</h3>
+          <p>Category mix, discount depth, and stockout monitoring.</p>
+          <span class="case-link">View dashboard →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">KPI dashboard preview</h2>
+      <div class="chart-block">
+        <h3>Monthly overtime cost — Executive Overview page</h3>
+        <div class="chart-canvas-wrap"><canvas id="kpiPreviewChart"></canvas></div>
+      </div>
+      <p class="subcopy">A recurring KPI card from the hospital staffing dashboard, tracking overtime cost as a headline total rather than an average.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Tanuja Hiremath. Built with HTML, CSS &amp; JavaScript — hosted on GitHub Pages.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
