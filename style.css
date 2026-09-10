@@ -452,7 +452,29 @@ img { max-width: 100%; display: block; }
   font-size: 0.85rem;
   padding: 7px 12px;
 }
+.source-pill:hover { border-color: var(--border-accent); color: var(--accent-blue); }
 .delivery-copy { color: var(--text-primary); font-weight: 500; }
+.job-radar-profile {
+  border-top: 1px solid var(--border-color);
+  margin-top: 28px;
+  padding-top: 24px;
+}
+.job-radar-profile p { color: var(--text-primary); font-size: 0.92rem; }
+.title-coverage {
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+  padding-top: 16px;
+}
+.title-coverage summary {
+  color: var(--accent-blue);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.title-coverage p {
+  font-size: 0.82rem;
+  margin-top: 12px;
+}
 .job-alert-form {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
@@ -483,6 +505,29 @@ img { max-width: 100%; display: block; }
   gap: 8px;
 }
 .choice-group input { accent-color: var(--accent-blue); }
+.search-query {
+  border-top: 1px solid var(--border-color);
+  padding-top: 14px;
+}
+.search-query summary {
+  color: var(--accent-blue);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.search-query code {
+  background: var(--bg-canvas);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  display: block;
+  font-family: Consolas, monospace;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin-top: 12px;
+  padding: 12px;
+  white-space: normal;
+}
 
 /* ===== Workflow ===== */
 .workflow-track {

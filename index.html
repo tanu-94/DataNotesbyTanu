@@ -162,22 +162,33 @@
       <div class="job-radar-copy">
         <span class="case-tag">Job Radar</span>
         <h2 class="section-heading">Keep your next opportunity on the radar.</h2>
-        <p>Get a daily shortlist of relevant data analyst roles from the places you already search, delivered in the format you prefer.</p>
+        <p>Get immediate, fresher-friendly analytics opportunities across broader titles, locations, and job boards — delivered in the format you prefer.</p>
         <div class="job-radar-details">
           <div>
-            <span class="job-radar-label">Daily sources</span>
+            <span class="job-radar-label">Alert sources</span>
             <div class="source-list" aria-label="Job alert sources">
-              <span class="source-pill">LinkedIn</span>
-              <span class="source-pill">Naukri</span>
-              <span class="source-pill">Indeed</span>
-              <span class="source-pill">Google Jobs</span>
+              <a class="source-pill" href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener">LinkedIn Jobs</a>
+              <a class="source-pill" href="https://www.naukri.com/" target="_blank" rel="noopener">Naukri</a>
+              <a class="source-pill" href="https://in.indeed.com/" target="_blank" rel="noopener">Indeed India</a>
+              <a class="source-pill" href="https://www.foundit.in/" target="_blank" rel="noopener">Foundit</a>
             </div>
           </div>
           <div>
-            <span class="job-radar-label">Delivery options</span>
-            <p class="delivery-copy">Email digest or SMS alert</p>
+            <span class="job-radar-label">Locations</span>
+            <p class="delivery-copy">Bengaluru · Remote India · Hybrid Bengaluru · Karnataka</p>
           </div>
         </div>
+        <div class="job-radar-profile">
+          <span class="job-radar-label">Priority titles</span>
+          <p>Data Analyst · Associate Data Analyst · BI Analyst · MIS Analyst · Reporting Analyst · Business Analyst · Analytics Associate · Junior Power BI Developer</p>
+        </div>
+        <details class="title-coverage">
+          <summary>View all fresher-friendly titles</summary>
+          <p><strong>Core:</strong> Junior Data Analyst, Data Analyst Intern, Junior Business Analyst, Reporting Analyst, Junior BI Analyst, Associate Analyst, Junior Analyst, Analyst Trainee</p>
+          <p><strong>SQL / BI:</strong> Power BI Developer, Power BI Analyst, Reporting Executive, MIS Executive, MIS Specialist, Data Reporting Analyst, Dashboard Analyst</p>
+          <p><strong>Analytics:</strong> Data Analytics Associate, Analytics Engineer, Data Operations Analyst, Data Operations Executive, Business Intelligence Associate, Data Quality Analyst</p>
+          <p><strong>Graduate:</strong> Trainee Data Analyst, Graduate Data Analyst, Data Analyst Fresher, Management Trainee Analytics</p>
+        </details>
       </div>
       <form class="contact-form job-alert-form" id="jobAlertForm"
         data-sheet-endpoint="https://script.google.com/macros/s/AKfycbw-jrMrJburQyqtCLUXhjRCTOMJo49Ad1K5fKtJSMuGVUzh3aM3amomDu0l3L3nWQ-_Dg/exec"
@@ -194,7 +205,15 @@
         <label for="alertPhone">Mobile number <span>(required for SMS)</span></label>
         <input type="tel" id="alertPhone" name="phone" autocomplete="tel" placeholder="+91 98765 43210">
         <label for="alertRole">Role keywords</label>
-        <input type="text" id="alertRole" name="role" placeholder="e.g. Data Analyst, BI Analyst">
+        <input type="text" id="alertRole" name="role" value="Data Analyst, Associate Data Analyst, BI Analyst, MIS Analyst, Reporting Analyst, Business Analyst, Analytics Associate, Junior Power BI Developer">
+        <label for="alertLocation">Preferred locations</label>
+        <input type="text" id="alertLocation" name="location" value="Bengaluru, Remote India, Hybrid Bengaluru, Karnataka">
+        <label for="alertExclude">Exclude keywords</label>
+        <input type="text" id="alertExclude" name="exclude" value="Senior, Lead, Manager, Principal, Director, Architect, 8+ Years, 10+ Years">
+        <details class="search-query">
+          <summary>Recommended search query</summary>
+          <code>("Data Analyst" OR "Business Analyst" OR "BI Analyst" OR "MIS Analyst" OR "Associate Analyst" OR "Junior Data Analyst" OR "Analytics Associate") AND (SQL OR "Power BI" OR Excel) AND Bengaluru</code>
+        </details>
         <fieldset class="choice-group">
           <legend>Delivery</legend>
           <label><input type="checkbox" name="delivery" value="Email"> Email</label>
