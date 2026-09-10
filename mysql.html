@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MySQL &amp; Relational Data Analysis — Tanuja Hiremath</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="nav-monogram">TH</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#hero" class="nav-link">Home</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="analystworkflow.html" class="nav-link">Workflow</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-primary btn-nav">Contact</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#skills">Skills</a> / MySQL</div>
+    <h1>MySQL &amp; relational data analysis</h1>
+    <p>Most of my analysis starts in SQL — cleaning the data at the source and answering the first round of business questions directly against the tables.</p>
+  </div>
+</section>
+
+<main>
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">What I use SQL for</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><h3>Data cleaning</h3><p>Standardizing types, trimming strings, and flagging nulls before analysis begins.</p></div>
+        <div class="feature-card"><h3>Joins</h3><p>Multi-table joins across fact and dimension tables to bring context to raw transactions.</p></div>
+        <div class="feature-card"><h3>Subqueries</h3><p>Nested queries to filter or aggregate before joining back to the main result set.</p></div>
+        <div class="feature-card"><h3>CTEs</h3><p>Common table expressions to break complex logic into readable, testable steps.</p></div>
+        <div class="feature-card"><h3>Window functions</h3><p>Ranking, running totals, and month-over-month comparisons with <code>DENSE_RANK</code> and <code>LAG</code>.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-elevated">
+    <div class="section-inner">
+      <h2 class="section-heading">Business questions solved</h2>
+      <ul>
+        <li>Which regions and sub-categories discount most heavily, and does it actually hurt profit?</li>
+        <li>Which departments are consistently understaffed against required headcount?</li>
+        <li>Which products or customers drive the most loss at high volume?</li>
+        <li>How does profit margin move month over month, and where does it diverge from the trend?</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">Project examples</h2>
+      <div class="chart-block">
+        <h3>Order revenue by region</h3>
+        <div class="chart-canvas-wrap"><canvas id="revenueByRegionChart"></canvas></div>
+      </div>
+      <p class="subcopy">From the Superstore analysis — a <code>GROUP BY</code> and <code>SUM()</code> query surfaced regional revenue splits before the deeper discount-tier work began. See the full <a href="https://github.com/tanu-94/superstore-discount-profit-analysis" target="_blank" rel="noopener">case study on GitHub →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Tanuja Hiremath. Built with HTML, CSS &amp; JavaScript — hosted on GitHub Pages.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
