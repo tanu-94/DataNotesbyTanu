@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excel for Business Reporting — Tanuja Hiremath</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="nav-monogram">TH</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#hero" class="nav-link">Home</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="index.html#workflow" class="nav-link">Workflow</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-primary btn-nav">Contact</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="skills.html">Skills</a> / Excel</div>
+    <h1>Excel for business reporting</h1>
+    <p>Before a dataset is ready for SQL or Power BI, Excel is often where the first pass of structure and validation happens.</p>
+  </div>
+</section>
+
+<main>
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">What I use it for</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><h3>Data preparation</h3><p>Cleaning raw exports before they're modeled anywhere else.</p></div>
+        <div class="feature-card"><h3>Pivot tables</h3><p>Fast first-pass summaries to sanity-check a dataset's shape.</p></div>
+        <div class="feature-card"><h3>Lookups</h3><p>VLOOKUP/XLOOKUP to join reference data without a database.</p></div>
+        <div class="feature-card"><h3>Dashboards</h3><p>Lightweight reporting views for teams without BI tool access.</p></div>
+        <div class="feature-card"><h3>Data validation</h3><p>Dropdowns and rules that keep manually-entered data usable.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-elevated">
+    <div class="section-inner">
+      <h2 class="section-heading">Showcase</h2>
+      <ul>
+        <li>Monthly sales report — pivot-based summary for a small retail team</li>
+        <li>Workforce tracker — shift and attendance log ahead of BI modeling</li>
+        <li>Inventory report — stock levels and reorder flags with data validation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <h2 class="section-heading">Pivot summary visualization</h2>
+      <div class="chart-block">
+        <h3>Units tracked by quarter</h3>
+        <div class="chart-canvas-wrap"><canvas id="pivotSummaryChart"></canvas></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Tanuja Hiremath. Built with HTML, CSS &amp; JavaScript — hosted on GitHub Pages.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
