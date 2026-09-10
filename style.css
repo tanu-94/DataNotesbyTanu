@@ -419,6 +419,71 @@ img { max-width: 100%; display: block; }
 .case-card p { margin-bottom: 16px; font-size: 0.92rem; }
 .case-card-chart { height: 160px; margin-bottom: 16px; position: relative; }
 
+/* ===== Job Radar ===== */
+.job-radar-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: start;
+}
+.job-radar-copy { padding-top: 8px; }
+.job-radar-copy .section-heading { margin-bottom: 18px; }
+.job-radar-copy > p { max-width: 48ch; }
+.job-radar-details {
+  display: grid;
+  gap: 24px;
+  margin-top: 34px;
+}
+.job-radar-label {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.source-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.source-pill {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  padding: 7px 12px;
+}
+.delivery-copy { color: var(--text-primary); font-weight: 500; }
+.job-alert-form {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+.form-heading h3 { font-size: 1.15rem; margin-bottom: 6px; }
+.form-heading p { font-size: 0.86rem; margin-bottom: 8px; }
+.job-alert-form label span { color: var(--text-dim); }
+.choice-group {
+  border: 0;
+  padding: 0;
+  margin: 4px 0 0;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.choice-group legend {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.choice-group label {
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.choice-group input { accent-color: var(--accent-blue); }
+
 /* ===== Workflow ===== */
 .workflow-track {
   display: grid;
@@ -497,6 +562,7 @@ img { max-width: 100%; display: block; }
   outline: none;
   border-color: var(--accent-blue);
 }
+.contact-form input::placeholder { color: var(--text-dim); }
 .contact-form button { margin-top: 8px; align-self: flex-start; }
 
 /* ===== Footer ===== */
@@ -511,7 +577,7 @@ img { max-width: 100%; display: block; }
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; min-height: auto; }
   .hero-frame { margin-top: 24px; }
-  .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .about-grid, .contact-grid, .job-radar-grid { grid-template-columns: 1fr; }
   .case-featured { grid-template-columns: 1fr; }
   .workflow-track { grid-template-columns: repeat(2, 1fr); }
 }

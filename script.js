@@ -453,25 +453,41 @@ if (restaurantCategoryEl) {
   });
 })();
 
-/* ================== CONTACT FORM ================== */
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  const statusEl = document.getElementById('formStatus');
-  contactForm.addEventListener('submit', async (e) => {
+/* ================== FORMS ================== */
+document.querySelectorAll('form[data-sheet-endpoint]').forEach(form => {
+  const statusEl = form.querySelector('.form-status');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const endpoint = contactForm.dataset.sheetEndpoint;
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const endpoint = form.dataset.sheetEndpoint;
 
     if (!endpoint || endpoint.startsWith('PASTE_')) {
-      statusEl.textContent = "Form isn't connected yet — email or text me directly using the links above.";
+      statusEl.textContent = form.dataset.errorMessage || "Form isn't connected yet — email or text me directly using the links above.";
       statusEl.className = 'form-status error';
       return;
     }
 
+    if (form.id === 'jobAlertForm') {
+      const deliveryOptions = form.querySelectorAll('input[name="delivery"]:checked');
+      const phone = form.querySelector('input[name="phone"]');
+      if (!deliveryOptions.length) {
+        statusEl.textContent = 'Choose at least one delivery option: email or SMS.';
+        statusEl.className = 'form-status error';
+        return;
+      }
+      if (form.querySelector('input[name="delivery"][value="SMS"]:checked') && !phone.value.trim()) {
+        statusEl.textContent = 'Add a mobile number to receive SMS alerts.';
+        statusEl.className = 'form-status error';
+        phone.focus();
+        return;
+      }
+    }
+
     // URL-encoded search params guarantees e.parameter extraction in Google Apps Script
-    const formData = new URLSearchParams(new FormData(contactForm));
+    const formData = new URLSearchParams(new FormData(form));
 
     submitBtn.disabled = true;
+    const originalLabel = submitBtn.textContent;
     submitBtn.textContent = 'Sending…';
     statusEl.textContent = '';
     statusEl.className = 'form-status';
@@ -484,15 +500,15 @@ if (contactForm) {
         body: formData.toString()
       });
 
-      statusEl.textContent = 'Thanks — your message has been sent!';
+      statusEl.textContent = form.dataset.successMessage || 'Thanks — your message has been sent!';
       statusEl.className = 'form-status success';
-      contactForm.reset();
+      form.reset();
     } catch (err) {
-      statusEl.textContent = 'Something went wrong — please email or text me directly instead.';
+      statusEl.textContent = form.dataset.errorMessage || 'Something went wrong — please email or text me directly instead.';
       statusEl.className = 'form-status error';
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = 'Send message';
+      submitBtn.textContent = originalLabel;
     }
   });
-}
+});

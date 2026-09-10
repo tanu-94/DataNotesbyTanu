@@ -19,6 +19,7 @@
       <a href="#hero" class="nav-link" data-section="hero">Home</a>
       <a href="#skills" class="nav-link" data-section="skills">Skills</a>
       <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#job-alerts" class="nav-link" data-section="job-alerts">Job alerts</a>
       <a href="#workflow" class="nav-link" data-section="workflow">Workflow</a>
       <a href="#contact" class="nav-link" data-section="contact">Contact</a>
     </nav>
@@ -152,6 +153,57 @@
           <a href="https://github.com/tanu-94/Restaurant_Sales_Analysis" class="case-link" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- JOB RADAR -->
+  <section class="section job-radar" id="job-alerts">
+    <div class="section-inner job-radar-grid">
+      <div class="job-radar-copy">
+        <span class="case-tag">Job Radar</span>
+        <h2 class="section-heading">Keep your next opportunity on the radar.</h2>
+        <p>Get a daily shortlist of relevant data analyst roles from the places you already search, delivered in the format you prefer.</p>
+        <div class="job-radar-details">
+          <div>
+            <span class="job-radar-label">Daily sources</span>
+            <div class="source-list" aria-label="Job alert sources">
+              <span class="source-pill">LinkedIn</span>
+              <span class="source-pill">Naukri</span>
+              <span class="source-pill">Indeed</span>
+              <span class="source-pill">Google Jobs</span>
+            </div>
+          </div>
+          <div>
+            <span class="job-radar-label">Delivery options</span>
+            <p class="delivery-copy">Email digest or SMS alert</p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form job-alert-form" id="jobAlertForm"
+        data-sheet-endpoint="https://script.google.com/macros/s/AKfycbw-jrMrJburQyqtCLUXhjRCTOMJo49Ad1K5fKtJSMuGVUzh3aM3amomDu0l3L3nWQ-_Dg/exec"
+        data-success-message="Your Job Radar preferences have been received."
+        data-error-message="We couldn't save your preferences — please try again or contact me directly.">
+        <div class="form-heading">
+          <h3>Set your alert preferences</h3>
+          <p>Choose your channels and I’ll use these details for the daily shortlist.</p>
+        </div>
+        <label for="alertName">Name</label>
+        <input type="text" id="alertName" name="name" autocomplete="name" required>
+        <label for="alertEmail">Email</label>
+        <input type="email" id="alertEmail" name="email" autocomplete="email" required>
+        <label for="alertPhone">Mobile number <span>(required for SMS)</span></label>
+        <input type="tel" id="alertPhone" name="phone" autocomplete="tel" placeholder="+91 98765 43210">
+        <label for="alertRole">Role keywords</label>
+        <input type="text" id="alertRole" name="role" placeholder="e.g. Data Analyst, BI Analyst">
+        <fieldset class="choice-group">
+          <legend>Delivery</legend>
+          <label><input type="checkbox" name="delivery" value="Email"> Email</label>
+          <label><input type="checkbox" name="delivery" value="SMS"> SMS</label>
+        </fieldset>
+        <input type="hidden" name="message" value="Job Radar alert subscription request">
+        <button type="submit" class="btn btn-primary">Start Job Radar</button>
+        <p class="form-status" id="jobAlertStatus" role="status"></p>
+      </form>
     </div>
   </section>
 
