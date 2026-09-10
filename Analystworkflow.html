@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I Solve Problems as a Data Analyst — Tanuja Hiremath</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="nav-monogram">TH</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html#hero" class="nav-link">Home</a>
+      <a href="index.html#skills" class="nav-link">Skills</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="analystworkflow.html" class="nav-link active">Workflow</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="index.html#contact" class="btn btn-primary btn-nav">Contact</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Workflow</div>
+    <h1>How I solve problems as a data analyst</h1>
+    <p>Tools change from project to project. This process doesn't — it's the part that actually produces a trustworthy answer.</p>
+  </div>
+</section>
+
+<main>
+  <section class="content-section">
+    <div class="section-inner">
+      <div class="timeline">
+        <div class="timeline-step"><span class="timeline-num">01</span><div><h3>Problem framing</h3><p>Define the real business question before touching a dataset.</p></div></div>
+        <div class="timeline-step"><span class="timeline-num">02</span><div><h3>Data collection</h3><p>Gather every relevant table or file, and confirm nothing needed is missing.</p></div></div>
+        <div class="timeline-step"><span class="timeline-num">03</span><div><h3>Data cleaning</h3><p>Fix types, nulls, and duplicates so the numbers can be trusted.</p></div></div>
+        <div class="timeline-step"><span class="timeline-num">04</span><div><h3>Exploratory analysis</h3><p>Dive through where, who, when, and how much — evidence before conclusions.</p></div></div>
+        <div class="timeline-step"><span class="timeline-num">05</span><div><h3>Data modeling</h3><p>Structure relationships between tables so the report can scale past one question.</p></div></div>
+        <div class="timeline-step"><span class="timeline-num">06</span><div><h3>Dashboard creation</h3><p>Build the report so a stakeholder can self-serve without needing me in the room.</p></div></div>
+        <div class="timeline-step"><span class="timeline-num">07</span><div><h3>Insights</h3><p>Trace the finding to its root cause, not just its symptom.</p></div></div>
+        <div class="timeline-step"><span class="timeline-num">08</span><div><h3>Recommendation</h3><p>Land on a plain-language action the client can actually take.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-elevated">
+    <div class="section-inner">
+      <h2 class="section-heading">Example: healthcare staffing project</h2>
+      <div class="flow-diagram">
+        <div class="flow-step">Business problem — is the hospital short-staffed, and where?</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Data audit — validate shift, staff, and absence records</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Staff gap analysis — required vs. actual staff, by shift and department</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Root cause detection — testing whether overtime and absenteeism explain the gap</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Dashboard — a 4-page Power BI report, built for self-serve reading</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Recommendation — where coverage should change, and why</div>
+      </div>
+      <p class="subcopy" style="margin-top:24px;">See the full breakdown in the <a href="https://github.com/tanu-94/Healthcare-Staff-Productivity-Shift-Analysis" target="_blank" rel="noopener">Healthcare Staffing case study →</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Tanuja Hiremath. Built with HTML, CSS &amp; JavaScript — hosted on GitHub Pages.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
