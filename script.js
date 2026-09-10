@@ -24,12 +24,12 @@ if (navToggle && navbar) {
   document.querySelectorAll('.nav-link').forEach(link => {
     const rawHref = link.getAttribute('href') || '';
 
-    // Ignore in-page section anchors on index.html (scroll-spy manages them)
+    // Ignore in-page section anchors on index.html (scroll-spy handles them)
     if (rawHref.startsWith('#')) return;
 
     const linkPath = rawHref.split('/').pop().split('#')[0] || 'index.html';
 
-    // Highlight only if the link belongs strictly to the active page
+    // Highlight only if the link matches the active page file
     if (linkPath === currentPath && (!rawHref.includes('#') || currentPath === 'index.html')) {
       link.classList.add('active');
     } else {
