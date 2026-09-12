@@ -419,6 +419,24 @@ img { max-width: 100%; display: block; }
 .case-card p { margin-bottom: 16px; font-size: 0.92rem; }
 .case-card-chart { height: 160px; margin-bottom: 16px; position: relative; }
 
+/* ===== Experience ===== */
+.experience-list {
+  display: grid;
+  gap: 18px;
+  max-width: 900px;
+}
+.experience-item {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) 1.2fr;
+  gap: 32px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border-color);
+}
+.experience-item:last-child { border-bottom: 1px solid var(--border-color); }
+.experience-item h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.experience-item > p { font-size: 0.92rem; }
+.experience-company { color: var(--text-dim); font-size: 0.85rem; }
+
 /* ===== Job Radar ===== */
 .job-radar-grid {
   display: grid;
@@ -624,6 +642,7 @@ img { max-width: 100%; display: block; }
   .hero-frame { margin-top: 24px; }
   .about-grid, .contact-grid, .job-radar-grid { grid-template-columns: 1fr; }
   .case-featured { grid-template-columns: 1fr; }
+  .experience-item { grid-template-columns: 1fr; gap: 12px; }
   .workflow-track { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 680px) {
