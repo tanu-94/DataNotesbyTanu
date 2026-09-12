@@ -467,22 +467,6 @@ document.querySelectorAll('form[data-sheet-endpoint]').forEach(form => {
       return;
     }
 
-    if (form.id === 'jobAlertForm') {
-      const deliveryOptions = form.querySelectorAll('input[name="delivery"]:checked');
-      const phone = form.querySelector('input[name="phone"]');
-      if (!deliveryOptions.length) {
-        statusEl.textContent = 'Choose at least one delivery option: email or SMS.';
-        statusEl.className = 'form-status error';
-        return;
-      }
-      if (form.querySelector('input[name="delivery"][value="SMS"]:checked') && !phone.value.trim()) {
-        statusEl.textContent = 'Add a mobile number to receive SMS alerts.';
-        statusEl.className = 'form-status error';
-        phone.focus();
-        return;
-      }
-    }
-
     // URL-encoded search params guarantees e.parameter extraction in Google Apps Script
     const formData = new URLSearchParams(new FormData(form));
 

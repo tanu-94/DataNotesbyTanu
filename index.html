@@ -162,7 +162,7 @@
       <div class="job-radar-copy">
         <span class="case-tag">Job Radar</span>
         <h2 class="section-heading">Keep your next opportunity on the radar.</h2>
-        <p>Get immediate, fresher-friendly analytics opportunities across broader titles, locations, and career portals — delivered by email or SMS as soon as matching roles are posted.</p>
+        <p>Get immediate, fresher-friendly analytics opportunities across broader titles, locations, and career portals — delivered by email as soon as matching roles are posted.</p>
         <div class="job-radar-details">
           <div>
             <span class="job-radar-label">Alert sources</span>
@@ -204,8 +204,6 @@
         <input type="text" id="alertName" name="name" autocomplete="name" required>
         <label for="alertEmail">Email</label>
         <input type="email" id="alertEmail" name="email" autocomplete="email" required>
-        <label for="alertPhone">Mobile number <span>(required for SMS)</span></label>
-        <input type="tel" id="alertPhone" name="phone" autocomplete="tel" placeholder="+91 98765 43210">
         <label for="alertRole">Role keywords</label>
         <input type="text" id="alertRole" name="role" value="Data Analyst, Associate Data Analyst, BI Analyst, MIS Analyst, Reporting Analyst, Business Analyst, Analytics Associate, Junior Power BI Developer">
         <label for="alertLocation">Preferred locations</label>
@@ -216,11 +214,7 @@
           <summary>Recommended search query</summary>
           <code>("Data Analyst" OR "Business Analyst" OR "BI Analyst" OR "MIS Analyst" OR "Associate Analyst" OR "Junior Data Analyst" OR "Analytics Associate") AND (SQL OR "Power BI" OR Excel) AND Bengaluru</code>
         </details>
-        <fieldset class="choice-group">
-          <legend>Delivery</legend>
-          <label><input type="checkbox" name="delivery" value="Email"> Email</label>
-          <label><input type="checkbox" name="delivery" value="SMS"> SMS</label>
-        </fieldset>
+        <input type="hidden" name="delivery" value="Email">
         <input type="hidden" name="message" value="Job Radar alert subscription request">
         <button type="submit" class="btn btn-primary">Start Job Radar</button>
         <p class="form-status" id="jobAlertStatus" role="status"></p>
